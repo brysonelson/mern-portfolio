@@ -1,0 +1,12 @@
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-item {
+    color: #eb774c;
+}
+
+.right-nav-item {
+    margin-right: 5vw;
+}
