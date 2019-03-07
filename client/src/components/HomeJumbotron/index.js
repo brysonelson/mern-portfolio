@@ -1,17 +1,15 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import HeaderMessage from "../HeaderMessage";
+import DownChevron from "../DownChevron";
 import "./style.css";
 
 function HomeJumbotron(props) {
   return (
     <div className="header-img">
-      Hello
+      <HeaderMessage />
+      <DownChevron />
     </div>
   )
-}
-
-HomeJumbotron.propTypes = {
-
 }
 
 export default HomeJumbotron

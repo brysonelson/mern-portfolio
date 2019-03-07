@@ -1,0 +1,19 @@
+#header-text {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin: auto;
+    font-family: 'Lobster', cursive;
+    color: #eb774c;
+    transition: .5s;
+}
+
+#header-text h1 {
+    width: 50%;
+    padding-right: 3%;
+}
+
+.header-message {
+    text-align: center;
+    margin-left: 1vw;
+}
