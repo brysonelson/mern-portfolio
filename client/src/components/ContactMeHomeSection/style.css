@@ -1,0 +1,72 @@
+.content-3-shape-hover {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    bottom: -130% !important;
+    left: -130% !important;
+    transition: .5s !important;
+}
+
+#content-3-shape {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    background: #1c3750;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    bottom: -90%;
+    left: -35%;
+    transition: .5s;
+}
+
+#content-3-diamond {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    background: #f1c9b5;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 50%;
+    position: absolute;
+    top: 11.5vh;
+    left: 5vw;
+    transition: .5s;
+    
+}
+
+#content-diamond-3-text {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 100%;
+    margin: 40% auto;
+    color: white;
+    transition: .5s;
+
+}
+
+#body-content-three {
+    height: 53vh;
+}
+
+#content-3-text {
+    margin-top: 11vh;
+}
+
+.content-hr-3 {
+    width: 33%;
+    margin-left: 0;
+}

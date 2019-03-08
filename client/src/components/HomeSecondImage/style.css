@@ -1,0 +1,12 @@
+.body-img{
+    height: 30vh;
+    display: block;
+}
+
+#body-img-1 {
+    background-image: url("../../images/start-up.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

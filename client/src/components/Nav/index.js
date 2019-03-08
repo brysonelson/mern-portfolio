@@ -1,6 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 import "./style.css";
+import ContactModal from "../ContactModal"
 import { Navbar, NavItem } from "react-materialize"
 
 function Nav(props) {
@@ -9,7 +10,7 @@ function Nav(props) {
     return (
         <Navbar className="navbar" fixed={true} brand={brandColor} right>
             <NavItem href='get-started.html'><div className="navbar-item">About Me</div></NavItem>
-            <NavItem href='get-started.html'><div className="navbar-item">Contact Me</div></NavItem>
+            <NavItem href='get-started.html'><div className="navbar-item"><ContactModal /></div></NavItem>
             <NavItem className="right-nav-item" href='get-started.html'><div className="navbar-item">Portfolio</div></NavItem>
         </Navbar>
     )

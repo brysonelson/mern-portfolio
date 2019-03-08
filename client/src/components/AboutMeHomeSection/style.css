@@ -1,0 +1,107 @@
+#content-1-shape {
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+    background: #eaba4d;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    top: -95%;
+    left: -35%;
+    transition: .5s;
+}
+
+.content-1-shape-hover {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    top: -520px !important;
+    left: -130% !important;
+    transition: .5s !important;
+}
+
+#content-1-diamond  {
+    width: 20vw;
+    height: 20vw;
+    margin: auto;
+    background: #1c3750;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    transition: .5s;
+}
+
+#content-diamond-1-text {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 100%;
+    margin: 30% auto;
+    margin-left: 7%;
+    color: white;
+    transition: .5s;
+
+}
+
+.body-content {
+    position: relative;
+    overflow: hidden;
+    height: 55%;
+    display: block;
+    width: 100%;
+}
+
+#content-1-diamond:hover, #content-2-diamond:hover, #content-3-diamond:hover {
+    transition: .5s;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-radius: 40px;
+    text-decoration: none;
+    
+}
+
+#content-1-diamond:hover #content-diamond-1-text, 
+#content-2-diamond:hover #content-diamond-2-text,
+#content-3-diamond:hover #content-diamond-3-text  {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s;
+    margin-left: 2vw;
+    margin-top: 16vh;
+}
+
+#content-1-text {
+    margin-top: 6vh;
+    width: 90%;
+    transition: .5s;
+}
+
+.content-1-hr {
+    width: 55%;
+    margin-left: 0;
+}
+
+#body-content-one {
+    height: 50vh;
+}

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import "./App.css"
 
 class App extends Component {
   render() {

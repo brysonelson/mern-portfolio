@@ -4,7 +4,7 @@ import "./style.css";
 
 function Foot(props) {
     return (
-        <Footer copyrights="&copy 2015 Copyright Text"
+        <Footer copyrights="&copy; 2015 Copyright Text"
             moreLinks={
                 <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
             }
@@ -17,8 +17,8 @@ function Foot(props) {
             }
             className='example'
         >
-            <h5 className="white-text">Footer Content</h5>
-            <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <h5 className="white-text">Thanks For Visiting</h5>
+            <p className="grey-text text-lighten-4">This site was built by me without the use of any pre-made theme. This portfolio is a MERN based application.</p>
         </Footer>
     )
 }

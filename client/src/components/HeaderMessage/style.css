@@ -6,6 +6,7 @@
     font-family: 'Lobster', cursive;
     color: #eb774c;
     transition: .5s;
+    animation: fadein 2s;
 }
 
 #header-text h1 {
@@ -16,4 +17,9 @@
 .header-message {
     text-align: center;
     margin-left: 1vw;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
