@@ -11,3 +11,7 @@
 .right-nav-item {
     margin-right: 5vw;
 }
+
+.portfolio-link:hover {
+    background: transparent;
+}

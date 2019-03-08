@@ -17,7 +17,7 @@ function ContactMeHomeSection(props) {
                         <h3><strong>Contact Me</strong></h3>
                         <h4>But Not Too Early.</h4><br />
                         <hr className="content-hr-3" /><br />
-                        <p>Reach out with any inquiries, opportunites, or questions. I love talking to new people!</p>
+                        <p>Reach out with any inquiries, opportunities, or questions. I love talking to new people!</p>
                         <p>Click "Contact" on the left to get ahold of me.</p>
                     </div>
                 </Col>

@@ -3,7 +3,7 @@ import "./style.css"
 
 function HomeThirdImage(props) {
   return (
-    <div class="body-img" id="body-img-2">
+    <div className="body-img" id="body-img-2">
             
     </div>
   )

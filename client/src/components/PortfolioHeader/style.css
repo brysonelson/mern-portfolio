@@ -1,0 +1,23 @@
+#portfolio-header-img {
+    background-image: url("../../images/IMG_3137.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    margin: auto;
+    height: 50vh;
+    width: 100%;
+    top:0;
+    /* height: 20ah; */
+    position: absolute;
+}
+
+#portfolio-header-text {
+    position: absolute;
+    top: 23%;
+    left:35%;
+    font-size: 60px;
+    /* font-weight: 900; */
+    color: #eb774c;
+    font-family: 'Lobster', cursive;
+}
