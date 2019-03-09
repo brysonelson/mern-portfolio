@@ -1,15 +1,26 @@
 import React from 'react'
-import { Card, CardTitle, Col } from "react-materialize"
+import "./style.css"
+import { Row, Col } from "react-materialize"
 
 function PortfolioProject(props) {
+
     return (
-        <Col s={6}>
-            <Card className='medium'
-                header={<CardTitle image='https://via.placeholder.com/150'>Card Title</CardTitle>}
-                actions={[<a href='#'>This is a Link</a>]}>
-                I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.
-            </Card>
-        </Col>
+
+        <div className="card hoverable z-depth-1">
+            <div className="card-image">
+                <img src={props.projectData.image} />
+                <a href={props.projectData.github} className="btn-floating halfway-fab waves-effect waves-light blue btn-flat btn-large" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div className="card-content">
+                <span className="card-title">{props.projectData.title}</span>
+                <hr></hr>
+                <b><i class="fas fa-pencil-alt"></i>  Description:</b>
+                <p className="project-description">{props.projectData.description}</p>
+                <br/>
+                <b><i class="fas fa-code"></i>  Technologies:</b>
+                <p>{props.projectData.technologies}</p>
+            </div>
+        </div>
     )
 }
 

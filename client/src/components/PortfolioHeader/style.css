@@ -1,11 +1,12 @@
 #portfolio-header-img {
+    /* background-image: url("../../images/IMG_3137.jpeg"); */
     background-image: url("../../images/IMG_3137.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
     background-attachment: fixed;
     margin: auto;
-    height: 50vh;
+    height: 44.5vh;
     width: 100%;
     top:0;
     /* height: 20ah; */

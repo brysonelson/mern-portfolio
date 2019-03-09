@@ -48,3 +48,8 @@ html, body, .container-fluid {
   opacity: 0 !important;
   transition: 1s;
 }
+
+.portfolio-scroll-disappear {
+  opacity: 0 !important;
+  transition: .5s;
+}

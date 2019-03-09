@@ -116,7 +116,7 @@ export default class Home extends Component {
 
         <InViewMonitor
           classNameNotInView='vis-hidden'
-          classNameInView='animated bounceInLeft'
+          classNameInView='animated fadeInRight'
           intoViewMargin="5%"
         >
           <SocialIcons />
@@ -124,19 +124,20 @@ export default class Home extends Component {
 
         <InViewMonitor
           classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInRight'
+          classNameInView='animated fadeInLeft'
           intoViewMargin="5%"
         >
           <AboutMeHomeSection shapeOneHover={this.shapeOneHover} />
+          <HomeSecondImage />
         </InViewMonitor>
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInLeft'
           intoViewMargin="5%"
         >
-          <HomeSecondImage />
-        </InViewMonitor>
+          
+        </InViewMonitor> */}
 
         <InViewMonitor
           classNameNotInView='vis-hidden'
