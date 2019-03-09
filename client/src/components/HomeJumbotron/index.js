@@ -7,7 +7,7 @@ function HomeJumbotron(props) {
   return (
     <div className="header-img">
       <HeaderMessage />
-      <DownChevron />
+      <DownChevron smoothScrollChevron={props.smoothScrollChevron}/>
     </div>
   )
 }

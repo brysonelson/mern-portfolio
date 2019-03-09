@@ -13,7 +13,7 @@
 
 .content-2-shape-hover {
     /* top: -520px !important; */
-    right: -195% !important;
+    right: -46% !important;
     transition: .5s !important;
 }
 
@@ -41,7 +41,9 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 100%;
-    margin: 40% auto;
+    position: absolute;
+    top:30%;
+    padding-left: 13%;
     color: white;
     transition: .5s;
 
@@ -78,4 +80,15 @@
 .content-hr-2 {
     width: 60%;
     margin-left: 0;
+}
+
+#content-2-diamond:hover #content-diamond-2-text {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: .5s;
+    position: absolute;
+    margin-top: 10%;
 }

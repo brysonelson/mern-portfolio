@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Nav from "../components/Nav";
 import PortfolioHeader from "../components/PortfolioHeader"
 import PortfolioProject from "../components/PortfolioProject"
 import { Row } from "react-materialize"
@@ -12,8 +13,9 @@ export default class Portfolio extends Component {
   render() {
     return (
       <div>
+        <Nav navItemColor="#eb774c"/>
         <PortfolioHeader />
-        <Row style={{marginLeft: "16vw", marginTop: "45vh"}}>
+        <Row className="container" style={{marginTop: "45vh"}}>
           <PortfolioProject />
           <PortfolioProject />
           <PortfolioProject />

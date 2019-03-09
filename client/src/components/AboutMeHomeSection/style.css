@@ -22,8 +22,8 @@
     -ms-transform: rotate(45deg) !important;
     -o-transform: rotate(45deg) !important;
     transform: rotate(45deg) !important;
-    top: -520px !important;
-    left: -130% !important;
+    top: -103% !important;
+    left: -42% !important;
     transition: .5s !important;
 }
 
@@ -51,8 +51,8 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 100%;
-    margin: 30% auto;
-    margin-left: 7%;
+    margin-top: 35%;
+    margin-left: 4%;
     color: white;
     transition: .5s;
 
@@ -78,16 +78,14 @@
     
 }
 
-#content-1-diamond:hover #content-diamond-1-text, 
-#content-2-diamond:hover #content-diamond-2-text,
-#content-3-diamond:hover #content-diamond-3-text  {
+#content-1-diamond:hover #content-diamond-1-text {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: .5s;
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-top: 16vh;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style.css"
 import { Row, Col } from "react-materialize"
+import { Link } from "react-router-dom"
 
 function PortfolioHomeSection(props) {
   return (
@@ -17,8 +18,8 @@ function PortfolioHomeSection(props) {
                 </Col>
                 <Col l={3}>
                     <div className="z-depth-2" id="content-2-shape"></div>
-                    <a href="./portfolio.html" className="mt-5 mx-5 z-depth-2" id="content-2-diamond">
-                        <h2 className="text-center" id="content-diamond-2-text">Portfolio</h2>
+                    <a onMouseOver={props.shapeTwoHover} className="mt-5 mx-5 z-depth-2" id="content-2-diamond">
+                        <Link to="/portfolio"><h2 className="text-center" id="content-diamond-2-text">Portfolio</h2></Link>
                     </a>
                 </Col>
             </Row>

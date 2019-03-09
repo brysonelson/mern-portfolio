@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col } from "react-materialize";
 import "./style.css"
+import { Link } from "react-router-dom"
 
 function AboutMeHomeSection(props) {
   return (
@@ -8,9 +9,11 @@ function AboutMeHomeSection(props) {
             <Row>
                 <Col l={3}>
                     <div className="z-depth-2" id="content-1-shape"></div>
-                    <a className="mt-5 z-depth-3" id="content-1-diamond">
-                        <h2 className="text-center" id="content-diamond-1-text">About Me</h2>
-                    </a>
+                    <Link to="/about/">
+                        <a onMouseOver={props.shapeOneHover} className="mt-5 z-depth-3" id="content-1-diamond">
+                            <h2 className="text-center" id="content-diamond-1-text">About Me</h2>
+                        </a>
+                    </Link>
                 </Col>
                 <Col l={8} className="offset-l1">
                     <div className="h-100 body-content-text" id="content-1-text">

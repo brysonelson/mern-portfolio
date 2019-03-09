@@ -1,0 +1,11 @@
+.scroll-color {
+    background: #1D3A52 !important;
+    color: white !important;
+    /* transition: .5s; */
+}
+
+.nav-item-scroll {
+    color: white !important;
+    background: transparent !important;
+    /* transition: .5s; */
+}

@@ -5,3 +5,10 @@
     background-attachment: fixed;
     background-size: cover;
 }
+
+.bottom-space {
+    height: 15vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 5vh;
+}

@@ -43,3 +43,8 @@ html, body, .container-fluid {
   height: 100%;
   margin: auto;
 }
+
+.scroll-disappear {
+  opacity: 0 !important;
+  transition: 1s;
+}

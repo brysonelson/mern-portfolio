@@ -4,7 +4,7 @@ import "./style.css"
 
 function ContactModal(props) {
 
-    const contactModalTrigger = <span style={{ border: "none" }}>Contact Me</span>
+    const contactModalTrigger = <span style={{ border: "none" }}>Contact</span>
     const contactModalHeader = <span style={{ color: "#eb774c", marginLeft: "5vw" }}>Contact Me</span>
     return (
         <Modal

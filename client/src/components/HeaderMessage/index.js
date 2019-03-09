@@ -7,7 +7,8 @@ function HeaderMessage(props) {
         <div id="header-text">
         <Row>
             <Col l={7} className="offset-l4">
-                <h1 className="header-message">Full Stack<br /> Web Developer</h1>
+                <h1 className="header-message animated flipInX">Full Stack<br /> Web Developer</h1>
+                <p className="header-sub-message">I build web apps to help solve everyday problems with simple, elegant design and the user at top of mind.</p>
             </Col>
         </Row>
         </div>
