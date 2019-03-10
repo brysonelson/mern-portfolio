@@ -80,7 +80,7 @@ export default class Home extends Component {
     var offset = $(aTag).offset();
     console.log(offset);
     //.offset().top;
-    $("html, body").animate({ scrollTop: offset.top - 150 }, 500);
+    $("html, body").animate({ scrollTop: offset.top - 150 }, 700);
   }
 
   //animations for the shapes on the home page

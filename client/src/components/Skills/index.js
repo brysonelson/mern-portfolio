@@ -14,7 +14,7 @@ function Skills(props) {
                     intoViewMargin="5%"
                 >
                     <Card className="hoverable about-skills">
-                        <h5><i className="fas fa-tools skills-logo"></i> Skills</h5>
+                        <h5><i className="fas fa-tools skills-logo"></i> Top Skills</h5>
                         <hr />
                         <Row>
                             <Col l={6}>

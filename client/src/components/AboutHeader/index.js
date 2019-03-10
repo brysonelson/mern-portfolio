@@ -15,7 +15,7 @@ function AboutHeader(props) {
                     classNameInView='animated rollIn'
                     intoViewMargin="5%"
                 >
-                    <div className="z-depth-2 circle profile-pic">
+                    <div className="z-depth-4 circle profile-pic">
                     </div>
                     </InViewMonitor>
                 </Col>
