@@ -1,0 +1,36 @@
+.about-head-text {
+    font-family: 'Lobster', cursive;
+    color: #eb774c;
+    margin-top: 12vh;
+    margin-left: 5vw;
+}
+
+.about-head {
+    margin-top: 10vh;
+}
+
+.about-page-quote {
+    margin-top:2vh;
+}
+
+.profile-pic {
+    background-image: url("../../images/profile.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    height: 30vh;
+    width: 30vh;
+    float: left;
+    position: -webkit-sticky; /* Safari */
+    position: relative;
+    top: 1vh;
+    left: 15vw;
+    color: black;
+    z-index: 99;
+}
+
+.about-quote-author {
+    float: right;
+}

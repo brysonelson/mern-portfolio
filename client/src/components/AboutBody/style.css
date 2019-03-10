@@ -1,0 +1,25 @@
+.about-background {
+    background-image: url("../../images/blank.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    overflow: auto;
+}
+
+.path {
+    stroke-dasharray: 100;
+    animation: dash 5s linear;
+    background-size: 300px 300px;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 2000;
+    }
+  }

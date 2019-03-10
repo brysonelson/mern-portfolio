@@ -1,0 +1,45 @@
+.body-wrapper {
+    height: 100vh;
+    /* background-image: url("../../images/business.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+
+.remove-body-wrapper {
+    display: none;
+    z-index: 0;
+}
+
+.background-wrapper-top {
+    background-image: url("../../images/business-top.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+}
+
+.background-wrapper-bottom {
+    background-image: url("../../images/business-bottom.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    bottom:0;
+}

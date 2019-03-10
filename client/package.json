@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
+  "alias": {
+    "react": "./node_modules/react"
+  },
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

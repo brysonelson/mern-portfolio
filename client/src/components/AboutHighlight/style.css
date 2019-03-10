@@ -1,0 +1,31 @@
+.highlight-area {
+    height: 45vh;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.highlight-area hr {
+    width: 85%;
+}
+
+.right-border {
+    /* border-right: solid 1px rgb(126, 126, 126); */
+    /* margin-right: 2px; */
+}
+
+.highlights {
+    margin-top: 0vh;
+}
+
+#ideas-highlight {
+    color: #e6c300;
+}
+
+#team-highlight {
+    color: rgb(0, 68, 255);
+}
+
+#code-highlight {
+    color: green;
+}

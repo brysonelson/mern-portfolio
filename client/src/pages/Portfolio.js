@@ -96,7 +96,7 @@ export default class Portfolio extends Component {
         <Nav navItemColor={this.state.navcolor} />
         <PortfolioHeader className="portfolio-head-area" />
         <Row className="project-area" style={{ marginTop: "38vh" }}>
-          <div>
+          <div className="animated fadeInLeftBig">
             <h4 className="portfolio-quote"><em>"Talk is cheap. Show me the code."</em></h4>
             <h5 className="portfolio-quote-1"><b>- Linus Torvalds</b></h5>
           </div>
