@@ -9,6 +9,6 @@ const contactSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-const Contact = mongoose.model("Book", contactSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
 module.exports = Contact;

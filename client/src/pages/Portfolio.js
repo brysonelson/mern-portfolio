@@ -100,7 +100,7 @@ export default class Portfolio extends Component {
             <h4 className="portfolio-quote"><em>"Talk is cheap. Show me the code."</em></h4>
             <h5 className="portfolio-quote-1"><b>- Linus Torvalds</b></h5>
           </div>
-          <Col l={10} className="offset-l1">
+          <Col l={10} className="offset-l1 project-display-area">
             <Masonry
               className={'my-gallery-class'} // default ''
               elementType={'ul'} // default 'div'

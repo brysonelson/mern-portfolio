@@ -26,7 +26,7 @@
     position: -webkit-sticky; /* Safari */
     position: relative;
     top: 1vh;
-    left: 15vw;
+    left: 12vw;
     color: black;
     z-index: 99;
 }

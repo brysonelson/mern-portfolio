@@ -7,3 +7,17 @@
     margin-left: 10%;
     margin-top: 5vh;
 }
+
+.close-modal {
+    background: transparent;
+    border: none;
+    color: rgb(85, 85, 85);
+    box-shadow: none;
+}
+
+.close-modal:hover {
+    background: transparent;
+    border: none;
+    color: rgb(85, 85, 85);
+    box-shadow: none;
+}

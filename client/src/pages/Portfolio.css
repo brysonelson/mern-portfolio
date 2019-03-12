@@ -1,10 +1,19 @@
 .portfolio-quote {
     /* animation: fadein 4s; */
     text-align: center;
-    
+    margin-top: 4vh;
+    position: relative;
+    top: 7vh;
 }
 
 .portfolio-quote-1 {
     /* animation: fadein 4s; */
     margin-left: 60vw;
+    margin-top: 4vh;
+    position: relative;
+    top: 6vh;
+}
+
+.project-display-area {
+    margin-top: 8vh;
 }

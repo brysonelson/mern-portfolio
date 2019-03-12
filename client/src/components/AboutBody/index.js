@@ -44,6 +44,7 @@ class AboutBody extends Component {
   render() {
     return (
       <div className="about-background">
+
         <AboutHeader />
         <AboutHighlight />
         <Row>
