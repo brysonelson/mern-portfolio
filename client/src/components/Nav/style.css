@@ -15,3 +15,13 @@
 .portfolio-link:hover {
     background: transparent;
 }
+
+.nav-logo {
+    width: 3vh;
+    height: 5vh;
+    padding-top: 2vh;
+}
+
+.nav-brand-name {
+    /* margin-top: -5vh !important; */
+}

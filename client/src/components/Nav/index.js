@@ -4,9 +4,10 @@ import "./style.css";
 import ContactModal from "../ContactModal"
 import { Navbar, NavItem } from "react-materialize"
 import { Link } from "react-router-dom"
+import logo from "../../images/logo.png"
 
 function Nav(props) {
-    const brandColor = <span style={{color: props.navItemColor, marginLeft: "5vw"}}>Bryson Nelson</span>;
+    const brandColor = <span style={{marginLeft: "5vw"}}><img className="nav-logo" src={logo}></img><span className="nav-brand-name" style={{color: props.navItemColor}}>  Bryson Nelson</span></span>;
 
     return (
         <Navbar className="navbar" fixed={true} brand={brandColor} right>
