@@ -100,7 +100,7 @@ class ContactModal extends Component {
                                 </tr>
                                 <tr>
                                     <td><b>LinkedIn:</b></td>
-                                    <td><a href="www.linkedin.com/in/bryson-nelson-7779a411a" target="_blank"><b>CLICK HERE TO VISIT LINKEDIN IN A NEW TAB</b></a></td>
+                                    <td><a href="https://www.linkedin.com/in/bryson-nelson-7779a411a/" target="_blank"><b>CLICK HERE TO VISIT LINKEDIN IN A NEW TAB</b></a></td>
                                 </tr>
                             </tbody>
                         </Table>
