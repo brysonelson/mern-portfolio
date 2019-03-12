@@ -45,9 +45,25 @@ class ContactModal extends Component {
                     // position: "top-end",
                     // customClass: "success-toast"
                     // confirmButtonText: 'Ok'
-                });
+                })
             }
-        })
+        }).catch(error => {
+    
+            if (error) {
+              Swal.fire({
+                title: 'Error',
+                text: "Please make sure you fill out all fields correctly",
+                type: 'error',
+                showConfirmButton: false,
+                showCancelButton: false,
+                // toast: true,
+                timer: 1500,
+                // position: "top-end",
+                customClass: "fail-toast"
+                // confirmButtonText: 'Ok'
+              });
+            }
+          });
     }
 
     render() {
