@@ -12,7 +12,7 @@ function Nav(props) {
     return (
         <Navbar className="navbar" fixed={true} brand={brandColor} right>
             <NavItem><Link className="portfolio-link" to="/about"><div className="navbar-item">About Me</div></Link></NavItem>
-            <NavItem><div className="navbar-item"><ContactModal /></div></NavItem>
+            <NavItem><div className="navbar-item navbar-contact"><ContactModal /></div></NavItem>
             <NavItem className="right-nav-item"><Link className="portfolio-link" to="/portfolio"><div className="navbar-item">Portfolio</div></Link></NavItem>
         </Navbar>
     )

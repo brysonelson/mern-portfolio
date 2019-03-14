@@ -34,3 +34,19 @@
 .about-quote-author {
     float: right;
 }
+
+@media screen and (max-width: 767px) {
+
+    .profile-pic {
+        top: 1vh;
+        left: 18vw;
+        width: 60vw;
+        height: 60vw;
+        margin: auto;
+    }
+
+    .about-head-text {
+        margin-top: 5vh;
+        margin-left: 18vw;
+    }
+  }

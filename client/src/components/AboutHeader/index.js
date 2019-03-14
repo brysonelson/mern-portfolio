@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from "react-materialize"
 import InViewMonitor from "react-inview-monitor"
-import $ from "jquery"
+// import $ from "jquery"
 import "./style.css"
 
 function AboutHeader(props) {
@@ -9,7 +9,7 @@ function AboutHeader(props) {
         <div>
 
             <Row className="about-head">
-                <Col l={4} className="offset-l1">
+                <Col l={4} s={12} className="offset-l1">
                 <InViewMonitor
                     classNameNotInView='vis-hidden'
                     classNameInView='animated rollIn'

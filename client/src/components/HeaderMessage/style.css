@@ -33,3 +33,24 @@
     animation: fadein 4s;
     font-family: 'Raleway', sans-serif;
 }
+
+@media screen and (max-width: 767px) {
+    #header-text {
+        position: absolute;
+        top: 22%;
+        width: 100%;
+        margin: auto;
+        font-family: 'Lobster', cursive;
+        color: #eb774c;
+        transition: .5s;
+    }
+    
+    #header-text h1 {
+        width: 100%;
+    }
+
+    .header-sub-message {
+        width: 100%;
+    } 
+    
+  }

@@ -17,3 +17,7 @@
 .project-display-area {
     margin-top: 8vh;
 }
+
+.project-area {
+    max-width: 100vw;
+}

@@ -7,7 +7,7 @@ import "./style.css"
 function AboutHighlight(props) {
     return (
         <Row>
-            <Col l="8" className="offset-l2 highlights">
+            <Col l={8} s={12} className="offset-l2 highlights">
                 <Row>
                     <div className="rounded-corners">
                         <InViewMonitor
@@ -15,12 +15,12 @@ function AboutHighlight(props) {
                             classNameInView='animated fadeInLeftBig'
                             intoViewMargin="5%"
                         >
-                            <Col l={4}>
+                            <Col l={4} s={12}>
                                 <Card className="highlight-area hoverable">
                                     <h2 id="ideas-highlight"><i className="far fa-lightbulb"></i></h2>
                                     <h5>Ideas</h5>
                                     <hr />
-                                    <p>I love realizing new ideas that can actually help people and make a difference. Whether those are big picture ideas, or more minute details.</p>
+                                    <p className="highlight-text">I love realizing new ideas that can actually help people and make a difference. Whether those are big picture ideas, or more minute details.</p>
                                 </Card>
 
                             </Col>
@@ -31,12 +31,12 @@ function AboutHighlight(props) {
                             classNameInView='animated fadeInUpBig'
                             intoViewMargin="5%"
                         >
-                            <Col l={4}>
+                            <Col l={4} s={12}>
                                 <Card className="highlight-area hoverable">
                                     <h2 id="team-highlight"><i class="fas fa-users"></i></h2>
                                     <h5>Teamwork</h5>
                                     <hr />
-                                    <p>Thinking creatively and cooperatively in teams is paramount to success in the rapidly changing world of tech. I strongly believe that working together will get us to our goals faster.</p>
+                                    <p className="highlight-text">Thinking creatively and cooperatively in teams is paramount to success in the rapidly changing world of tech. I strongly believe that working together will get us to our goals faster.</p>
                                 </Card>
                             </Col>
                         </InViewMonitor>
@@ -46,12 +46,12 @@ function AboutHighlight(props) {
                             classNameInView='animated fadeInRightBig'
                             intoViewMargin="5%"
                         >
-                            <Col l={4}>
+                            <Col l={4} s={12}>
                                 <Card className="highlight-area hoverable">
                                     <h2 id="code-highlight"><i class="fas fa-laptop-code"></i></h2>
                                     <h5>Code</h5>
                                     <hr />
-                                    <p>Undoubledly, my favorite part of the whole development process is actually putting my fingers to the keyboard. I love learning, reading, and writing code, and am always learning.</p>
+                                    <p className="highlight-text">Undoubledly, my favorite part of the whole development process is actually putting my fingers to the keyboard. I love learning, reading, and writing code, and am always learning.</p>
                                 </Card>
                             </Col>
                         </InViewMonitor>

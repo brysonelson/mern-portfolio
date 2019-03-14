@@ -68,7 +68,7 @@ class ContactModal extends Component {
 
     render() {
 
-    const contactModalTrigger = <span style={{ border: "none" }}>Contact</span>
+    const contactModalTrigger = <span style={{ border: "none" }}>Contact Me</span>
     const contactModalHeader = <span style={{ color: "#eb774c", marginLeft: "5vw" }}>Contact Me</span>
     return (
         <Modal
@@ -79,14 +79,14 @@ class ContactModal extends Component {
             <h6 style={{ marginLeft: "5vw" }}>Please fill out the info below to get in touch about any possible opportunities, questions, or just to say hi! You may also reach me with the contact info provided</h6>
             <Row className="contact-form">
                 <Row>
-                    <Col s={6} style={{borderRight: "solid 1px #848484"}}>
+                    <Col s={12} l={6} className="contact-border" style={{borderRight: "solid 1px #848484"}}>
                         <Input s={12} label="First Name" name="first_name" value={this.state.first_name} onChange={this.handleChange}/>
                         <Input s={12} label="Last Name" name="last_name" value={this.state.last_name} onChange={this.handleChange}/>
                         <Input type="email" label="Email" s={12}  name="email" value={this.state.email} onChange={this.handleChange}/>
                         <Input type="textarea" label="Message" s={12} name="message" value={this.state.message} onChange={this.handleChange}/>
                         <Button className="modal-action modal-close" type="submit" onClick={this.submitContact}>Submit</Button>
                     </Col>
-                    <Col s={6}>
+                    <Col s={12} l={6}>
                         <h4>Contact Info</h4>
                         <Table bordered={true}>
                             <tbody>

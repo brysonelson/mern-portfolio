@@ -79,7 +79,7 @@ export default class Portfolio extends Component {
 
   render() {
     let childElements = this.state.projectArr.map(project => (
-      <Col s={4}>
+      <Col s={12} m={6} l={4}>
         <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInUp'
@@ -100,7 +100,7 @@ export default class Portfolio extends Component {
             <h4 className="portfolio-quote"><em>"Talk is cheap. Show me the code."</em></h4>
             <h5 className="portfolio-quote-1"><b>- Linus Torvalds</b></h5>
           </div>
-          <Col l={10} className="offset-l1 project-display-area">
+          <Col l={10} s={12} m={10} className="offset-l1 offset-m1 project-display-area">
             <Masonry
               className={'my-gallery-class'} // default ''
               elementType={'ul'} // default 'div'

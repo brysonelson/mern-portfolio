@@ -17,7 +17,7 @@ function Skills(props) {
                         <h5><i className="fas fa-tools skills-logo"></i> Top Skills</h5>
                         <hr />
                         <Row>
-                            <Col l={6}>
+                            <Col l={6} s={12}>
                                 <Collection>
                                     <CollectionItem><b>Browser-Based</b></CollectionItem>
                                     <CollectionItem><i className="fas fa-chevron-right skills-bullet"></i><i className="fas fa-chevron-right skills-bullet"></i> HTML</CollectionItem>
@@ -31,7 +31,7 @@ function Skills(props) {
                                     <CollectionItem><i className="fas fa-chevron-right skills-bullet"></i><i className="fas fa-chevron-right skills-bullet"></i>  Material Design</CollectionItem>
                                 </Collection>
                             </Col>
-                            <Col l={6}>
+                            <Col l={6} s={12}>
                                 <Collection>
                                     <CollectionItem><b>Deployment</b></CollectionItem>
                                     <CollectionItem><i className="fas fa-chevron-right skills-bullet"></i><i className="fas fa-chevron-right skills-bullet"></i>  Heroku</CollectionItem>

@@ -10,3 +10,27 @@
     /* transition: .5s; */
 }
 
+#sidenav-overlay {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav-item-scroll {
+        color: #eb774c !important;
+        /* background: transparent !important; */
+        /* transition: .5s; */
+    }
+
+    .right-nav-item {
+        margin-left: 0vw;
+    }
+
+    .navbar-contact {
+        margin-left: 5vw;
+    }
+
+    .button-collapse {
+        color: #eb774c !important;
+    }
+  }

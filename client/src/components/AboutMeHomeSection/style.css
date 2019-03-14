@@ -64,6 +64,12 @@
     height: 55%;
     display: block;
     width: 100%;
+    
+}
+
+.body-content a {
+    text-decoration: none;
+    color: #494949 !important; 
 }
 
 #content-1-diamond:hover, #content-2-diamond:hover, #content-3-diamond:hover {
@@ -103,3 +109,10 @@
 #body-content-one {
     height: 53vh;
 }
+
+@media screen and (max-width: 767px) {
+    .home-area-mobile {
+        display: none;
+    }
+    
+  }

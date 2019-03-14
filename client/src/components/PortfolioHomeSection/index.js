@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 function PortfolioHomeSection(props) {
   return (
     <div className="body-content container-fluid" id="body-content-two">
+        <Link to="/portfolio">
             <Row>
                 <Col l={8} className="offset-l1">
                     <div className="h-100 body-content-text" id="content-2-text">
@@ -13,17 +14,18 @@ function PortfolioHomeSection(props) {
                             <h4>Ideas in Action. Code in Progress.</h4><br/>
                             <hr className="content-hr-2" /><br />
                             <p>My favorite part of coding is getting to convert my ideas into functioning applications.</p>
-                            <p>Click "Portfilio" on the right to see my body of work.</p>
+                            <p>Click "Portfilio" to see my body of work.</p>
                     </div>
                 </Col>
-                <Col l={3}>
+                <Col l={3} className="home-area-mobile">
                     <div className="z-depth-2" id="content-2-shape"></div>
                     <a onMouseOver={props.shapeTwoHover} className="mt-5 mx-5 z-depth-2" id="content-2-diamond">
-                        <Link to="/portfolio"><h2 className="text-center" id="content-diamond-2-text">Portfolio</h2></Link>
+                        <h2 className="text-center" id="content-diamond-2-text">Portfolio</h2>
                     </a>
                 </Col>
             </Row>
-        </div>
+        </Link>
+    </div>
   )
 }
 

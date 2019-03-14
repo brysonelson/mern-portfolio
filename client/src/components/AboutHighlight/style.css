@@ -29,3 +29,10 @@
 #code-highlight {
     color: green;
 }
+
+@media screen and (max-width: 767px) {
+    .highlight-area {
+        height: auto;
+    }
+    
+  }
