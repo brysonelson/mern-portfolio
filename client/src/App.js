@@ -5,7 +5,11 @@ import Portfolio from "./pages/Portfolio";
 import AboutMe from "./pages/AboutMe"
 import NoMatch from "./pages/NoMatch";
 import ScrollToTop from "./components/ScrollToTop"
+import ReactGA from 'react-ga'
 import "./App.css"
+
+ReactGA.initialize('UA-000000-01');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
 
