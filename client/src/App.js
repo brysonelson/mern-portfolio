@@ -8,7 +8,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import ReactGA from 'react-ga'
 import "./App.css"
 
-ReactGA.initialize('UA-000000-01');
+ReactGA.initialize('UA-136219192-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
