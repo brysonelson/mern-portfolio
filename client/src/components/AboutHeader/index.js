@@ -12,7 +12,7 @@ function AboutHeader(props) {
                 <Col l={4} s={12} className="offset-l1">
                 <InViewMonitor
                     classNameNotInView='vis-hidden'
-                    classNameInView='animated rollIn'
+                    classNameInView='animated'
                     intoViewMargin="5%"
                 >
                     <div className="z-depth-2 circle profile-pic">
@@ -20,7 +20,7 @@ function AboutHeader(props) {
                     </InViewMonitor>
                 </Col>
                 <Col l={4} className="offset-l1">
-                    <h1 className="about-head-text animated zoomIn">About Me</h1>
+                    <h1 className="about-head-text animated fadeInUp">About Me</h1>
                 </Col>
             </Row>
             <Row>

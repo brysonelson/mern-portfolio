@@ -116,20 +116,20 @@ export default class Home extends Component {
 
         <InViewMonitor
           classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInRight'
-          intoViewMargin="5%"
+          classNameInView='animated fadeInLeft'
+          intoViewMargin="10%"
         >
           <SocialIcons />
         </InViewMonitor>
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInLeft'
           intoViewMargin="5%"
-        >
+        > */}
           <AboutMeHomeSection shapeOneHover={this.shapeOneHover} />
           <HomeSecondImage />
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
 
         {/* <InViewMonitor
           classNameNotInView='vis-hidden'
@@ -139,37 +139,37 @@ export default class Home extends Component {
           
         </InViewMonitor> */}
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInRight'
           intoViewMargin="5%"
-        >
+        > */}
           <PortfolioHomeSection shapeTwoHover={this.shapeTwoHover} />
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInLeft'
           intoViewMargin="5%"
-        >
+        > */}
           <HomeThirdImage />
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInRight'
           intoViewMargin="5%"
-        >
+        > */}
           <ContactMeHomeSection shapeThreeHover={this.shapeThreeHover} />
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
 
-        <InViewMonitor
+        {/* <InViewMonitor
           classNameNotInView='vis-hidden'
           classNameInView='animated fadeInLeft'
           intoViewMargin="5%"
-        >
+        > */}
           <HomeFourthImage />
-        </InViewMonitor>
+        {/* </InViewMonitor> */}
 
         <ActionButton />
         <Foot />

@@ -52,8 +52,8 @@
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     width: 100%;
-    margin-top: 30%;
-    margin-left: 10%;
+    margin-top: 40%;
+    margin-left: 0%;
     color: white;
     transition: .5s;
 
@@ -79,6 +79,6 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: .5s;
-    margin-left: 2vw;
-    margin-top: 18vh;
+    margin-left: 0vw;
+    margin-top: 13vh;
 }
