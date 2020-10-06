@@ -17,25 +17,31 @@ import $ from "jquery"
 
 export default class Home extends Component {
 
+  //state of the home page
   state = {
     navcolor: "#eb774c"
   }
 
+  //handle the scroll event for the nav bar
   constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
+  //when the page loads, listen for the scroll event
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   };
 
+  //when you leave the page, remove the scroll listner
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   };
 
+  //scroll event for the navbar
   handleScroll(event) {
 
+    
     var scroll = $(window).scrollTop(); // how many pixels you've scrolled
     var os = $('.header-img').offset().top; // pixels to the top of div1
     var ht = $('.header-img').height(); // height of div1 in pixels
@@ -44,12 +50,14 @@ export default class Home extends Component {
     if (scroll > os + ht - 100) {
       $('.navbar').addClass('scroll-color');
       $('.navbar-item').addClass('nav-item-scroll');
+      $('.button-collapse').addClass('button-collapse-blue-nav');
       this.setState({
         navcolor: "white"
       })
     } else {
       $('.navbar').removeClass('scroll-color');
       $('.navbar-item').removeClass('nav-item-scroll');
+      $('.button-collapse').removeClass('button-collapse-blue-nav');
       this.setState({
         navcolor: "#eb774c"
       })
@@ -116,7 +124,7 @@ export default class Home extends Component {
 
         <InViewMonitor
           classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInLeft'
+          classNameInView='animated fadeIn home-top-space'
           intoViewMargin="10%"
         >
           <SocialIcons />

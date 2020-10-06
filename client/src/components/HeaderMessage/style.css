@@ -15,7 +15,7 @@
 
 .header-message {
     text-align: center;
-    margin-left: 1vw;
+    margin-left: .5vw;
     animation-duration: 2s;
 }
 
@@ -32,25 +32,23 @@
     font-weight: bold;
     animation: fadein 4s;
     font-family: 'Raleway', sans-serif;
+    margin-left: -.4vw;
 }
 
 @media screen and (max-width: 767px) {
     #header-text {
-        position: absolute;
-        top: 22%;
-        width: 100%;
-        margin: auto;
-        font-family: 'Lobster', cursive;
-        color: #eb774c;
-        transition: .5s;
+        top: 18%;
     }
-    
+
     #header-text h1 {
+        padding-left: 1vw;
         width: 100%;
+        font-size: 35px;
     }
 
     .header-sub-message {
         width: 100%;
+        margin-top: 17vh;
     } 
     
   }

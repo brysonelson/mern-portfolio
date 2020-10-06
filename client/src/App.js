@@ -19,10 +19,15 @@ class App extends Component {
         <ScrollToTop>
           <div>
             <Switch>
+              {/* paths to home */}
               <Route exact path="/" component={Home} />
               <Route exact path="/home" component={Home} />
+
+              {/* path to portfolio */}
               <Route exact path="/portfolio" component={Portfolio} />
+              {/* path to about me */}
               <Route exact path="/about" component={AboutMe} />
+              {/* 404 path */}
               <Route component={NoMatch} />
             </Switch>
           </div>

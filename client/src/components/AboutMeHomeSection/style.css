@@ -114,5 +114,15 @@
     .home-area-mobile {
         display: none;
     }
+
+    #content-1-text {
+        margin-top: 0vh;
+        width: 90%;
+        transition: .5s;
+    }
+
+    #body-content-one {
+        height: 50vh;
+    }
     
   }

@@ -18,7 +18,6 @@ function Foot(props) {
             className='example'
         >
             <h5 className="white-text">Thanks For Visiting</h5>
-            <p className="grey-text text-lighten-4">This site was hand-built without the use of any pre-made theme. It was built on the MERN stack including MongoDB, ExpressJS, ReactJS, and NodeJS.</p>
             
         </Footer>
     )

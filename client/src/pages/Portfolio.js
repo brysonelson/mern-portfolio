@@ -50,12 +50,16 @@ export default class Portfolio extends Component {
     if (scroll > os + ht - 100) {
       $('.navbar').addClass('scroll-color');
       $('.navbar-item').addClass('nav-item-scroll');
+      $('.button-collapse').addClass('button-collapse-white')
+      $('.navbar-item').addClass('navbar-item-scroll')
       this.setState({
         navcolor: "white"
       })
     } else {
       $('.navbar').removeClass('scroll-color');
       $('.navbar-item').removeClass('nav-item-scroll');
+      $('.button-collapse').removeClass('button-collapse-white')
+      $('.navbar-item').removeClass('navbar-item-scroll')
       this.setState({
         navcolor: "#eb774c"
       })

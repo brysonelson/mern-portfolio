@@ -7,3 +7,19 @@
     margin: auto;
     height: 100vh;
 }
+
+@media screen and (max-width: 767px) {
+    .header-img {
+        background: url("../../images/clean-computer-setup.jpg") no-repeat center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: auto;
+        height: 50vh;
+    }
+
+    .down-chevron {
+        display: none !important;
+    }
+}

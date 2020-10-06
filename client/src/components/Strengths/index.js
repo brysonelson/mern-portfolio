@@ -5,7 +5,7 @@ import "./style.css"
 
 function Strengths(props) {
   return (
-    <Col l={3}>
+    <Col l={3} m={5} s={12}>
                 <InViewMonitor
                     classNameNotInView='vis-hidden'
                     classNameInView='animated slideInUp'

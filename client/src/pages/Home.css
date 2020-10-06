@@ -14,10 +14,25 @@
     display: none;
 }
 
+.button-collapse {
+    color: #1D3A52;
+}
+
+.content-3-shape-hover {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    bottom: -90% !important;
+    left: -45% !important;
+    transition: .5s !important;
+}
+
 @media screen and (max-width: 767px) {
 
     .nav-item-scroll {
-        color: #eb774c !important;
+        color: #1D3A52 !important;
         /* background: transparent !important; */
         /* transition: .5s; */
     }
@@ -31,6 +46,10 @@
     }
 
     .button-collapse {
-        color: #eb774c !important;
+        color: #1D3A52;
+    }
+
+    .button-collapse-blue-nav {
+        color: white;
     }
   }

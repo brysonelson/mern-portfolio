@@ -30,9 +30,238 @@
     color: green;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1370px) and (max-height: 1025px) {
+    .highlight-area {
+        height: 30vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .highlight-area {
+        height: 25vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 1000px) {
+    .highlight-area {
+        height: 45vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .highlight-area {
+        height: 30vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 825px) and (max-height: 415px) {
+    .highlight-area {
+        height: 70vh;
+    }
+
+}
+
+@media screen and (max-width: 815px) and (max-height: 376px) {
+    .highlight-area {
+        height: 65vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    .team-highlight-title, .idea-highlight-title, .code-highlight-title {
+        display: inline;
+        padding-left: 2vw;
+    }  
+}
+
+@media screen and (max-width: 740px) and (max-height: 415px) {
+    .highlight-area {
+        height: 65vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    .team-highlight-title, .idea-highlight-title, .code-highlight-title {
+        display: inline;
+        padding-left: 2vw;
+    }  
+}
+
+@media screen and (max-width: 668px) and (max-height: 376px) {
+    .highlight-area {
+        height: 75vh;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 20px;
+        display: inline;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 20px;
+        display: inline;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 20px;
+        display: inline;
+    }
+
+    .team-highlight-title, .idea-highlight-title, .code-highlight-title {
+        display: inline;
+        padding-left: 1vw;
+    }  
+}
+
+  @media screen and (max-width: 415px) {
     .highlight-area {
         height: auto;
     }
-    
-  }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    .team-highlight-title, .idea-highlight-title, .code-highlight-title {
+        display: inline;
+        padding-left: 2vw;
+    }  
+}
+
+@media screen and (max-width: 325px) {
+    .highlight-area {
+        height: auto;
+    }
+
+    #ideas-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #team-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    #code-highlight {
+        margin-top: 0;
+        font-size: 30px;
+        display: inline;
+    }
+
+    .team-highlight-title, .idea-highlight-title, .code-highlight-title {
+        display: inline;
+        padding-left: 2vw;
+    }
+}

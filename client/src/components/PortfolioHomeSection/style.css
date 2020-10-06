@@ -92,3 +92,18 @@
     position: absolute;
     margin-top: 10%;
 }
+
+@media screen and (max-width: 767px) {
+    .home-area-mobile {
+        display: none;
+    }
+
+    #content-2-text {
+        margin-top: 0vh;
+    }
+
+    #body-content-two {
+        height: 45vh;
+    }
+    
+  }

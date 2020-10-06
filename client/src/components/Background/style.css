@@ -5,3 +5,21 @@
 .background-logo {
     color: #be0000;
 }
+
+@media screen and (max-width: 767px) {
+    .about-me-background {
+        margin-top: -3vh;
+        margin-left: 10.5px;
+        margin-right: 10.5px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 815px) and (max-height: 376px) {
+    .about-me-background {
+        margin-left: 10.5px;
+        margin-right: 10.5px;
+    }
+
+}

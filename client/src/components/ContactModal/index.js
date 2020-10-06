@@ -68,7 +68,7 @@ class ContactModal extends Component {
 
     render() {
 
-    const contactModalTrigger = <span style={{ border: "none" }}>Contact Me</span>
+    const contactModalTrigger = <span className="text-center" style={{ border: "none" }}>Contact Me</span>
     const contactModalHeader = <span style={{ color: "#eb774c", marginLeft: "5vw" }}>Contact Me</span>
     return (
         <Modal

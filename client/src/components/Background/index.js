@@ -5,7 +5,7 @@ import "./style.css"
 
 function Background(props) {
     return (
-            <Col l={5} className="offset-l2">
+            <Col l={5} m={7} s={12} className="offset-l2">
                 <InViewMonitor
                     classNameNotInView='vis-hidden'
                     classNameInView='animated slideInLeft'

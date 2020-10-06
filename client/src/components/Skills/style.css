@@ -9,3 +9,24 @@
 .skills-bullet {
     color: goldenrod;
 }
+
+@media screen and (max-width: 767px) {
+    .about-skills {
+        margin-left: 10.5px;
+        margin-right: 10.5px;
+        margin-top: -2vh;
+        text-align: center;
+    }
+
+    .skills-bullet-align-left {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 815px) and (max-height: 376px) {
+    .about-skills {
+        margin-left: 10.5px;
+        margin-right: 10.5px;
+    }
+
+}
