@@ -13,6 +13,20 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
 
+  state = {
+    introAnimationFinished: false
+  }
+
+  componentDidMount = () => {
+    setTimeout(function() {
+      this.setState({
+        introAnimationFinished: true
+      })
+      console.log(this.state.introAnimationFinished)
+    }.bind(this), 7000);
+  }
+  
+
   render() {
     return (
       <Router onUpdate={() => window.scrollTo(0, 0)}>
@@ -20,8 +34,10 @@ class App extends Component {
           <div>
             <Switch>
               {/* paths to home */}
-              <Route exact path="/" component={Home} />
-              <Route exact path="/home" component={Home} />
+              <Route exact path="/" render={(props) => (
+                <Home {...props} loaded={this.state.introAnimationFinished} />
+              )} />
+              <Route exact path="/home" component={Home} loaded={this.state.introAnimationFinished}/>
 
               {/* path to portfolio */}
               <Route exact path="/portfolio" component={Portfolio} />

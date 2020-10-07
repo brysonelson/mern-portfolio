@@ -18,10 +18,11 @@ function PortfolioHomeSection(props) {
                     </div>
                 </Col>
                 <Col l={3} className="home-area-mobile">
-                    <div className="z-depth-2" id="content-2-shape"></div>
+                    
                     <a onMouseOver={props.shapeTwoHover} className="mt-5 mx-5 z-depth-2" id="content-2-diamond">
                         <h2 className="text-center" id="content-diamond-2-text">Portfolio</h2>
                     </a>
+                    <div className="z-depth-2" id="content-2-shape"></div>
                 </Col>
             </Row>
         </Link>

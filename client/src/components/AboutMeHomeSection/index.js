@@ -9,11 +9,10 @@ function AboutMeHomeSection(props) {
         <Link to="/about/">
             <Row>
                 <Col l={3} s={1} className="home-area-mobile">
+                    <a onMouseOver={props.shapeOneHover} className="mt-5 z-depth-3" id="content-1-diamond">
+                        <h2 className="text-center" id="content-diamond-1-text">About Me</h2>
+                    </a>
                     <div className="z-depth-2" id="content-1-shape"></div>
-                    
-                        <a onMouseOver={props.shapeOneHover} className="mt-5 z-depth-3" id="content-1-diamond">
-                            <h2 className="text-center" id="content-diamond-1-text">About Me</h2>
-                        </a>
                     
                 </Col>
                 <Col l={8} s={12} className="offset-l1">

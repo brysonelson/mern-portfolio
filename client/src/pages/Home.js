@@ -19,7 +19,8 @@ export default class Home extends Component {
 
   //state of the home page
   state = {
-    navcolor: "#eb774c"
+    navcolor: "#eb774c",
+    loaded: false
   }
 
   //handle the scroll event for the nav bar
@@ -31,6 +32,9 @@ export default class Home extends Component {
   //when the page loads, listen for the scroll event
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    this.setState({
+      loaded: this.props.loaded
+    })
   };
 
   //when you leave the page, remove the scroll listner
@@ -51,6 +55,7 @@ export default class Home extends Component {
       $('.navbar').addClass('scroll-color');
       $('.navbar-item').addClass('nav-item-scroll');
       $('.button-collapse').addClass('button-collapse-blue-nav');
+      $('.button-collapse').addClass("button-collapse-white");
       this.setState({
         navcolor: "white"
       })
@@ -58,6 +63,7 @@ export default class Home extends Component {
       $('.navbar').removeClass('scroll-color');
       $('.navbar-item').removeClass('nav-item-scroll');
       $('.button-collapse').removeClass('button-collapse-blue-nav');
+      $('.button-collapse').removeClass("button-collapse-white");
       this.setState({
         navcolor: "#eb774c"
       })
@@ -92,94 +98,87 @@ export default class Home extends Component {
   }
 
   //animations for the shapes on the home page
-  shapeOneHover = (event) => {
-    $("#content-1-diamond").hover(function () {
-      $("#content-1-shape").addClass("content-1-shape-hover");
-    }, function () {
-      $("#content-1-shape").removeClass("content-1-shape-hover");
-    });
-  }
+  // shapeOneHover = (event) => {
+  //   $("#content-1-diamond").hover(function () {
+  //     $("#content-1-shape").addClass("content-1-shape-hover");
+  //   }, function () {
+  //     $("#content-1-shape").removeClass("content-1-shape-hover");
+  //   });
+  // }
 
-  shapeTwoHover = (event) => {
-    $("#content-2-diamond").hover(function () {
-      $("#content-2-shape").addClass("content-2-shape-hover");
-    }, function () {
-      $("#content-2-shape").removeClass("content-2-shape-hover");
-    });
-  }
+  // shapeTwoHover = (event) => {
+  //   $("#content-2-diamond").on("mouseenter", function () {
+  //     $("#content-2-shape").addClass("content-2-shape-hover");
+  //   }).on("mouseleave", function () {
+  //     $("#content-2-shape").removeClass("content-2-shape-hover");
+  //   });
+  // }
 
-  shapeThreeHover = (event) => {
-    $("#content-3-diamond").hover(function () {
-      $("#content-3-shape").addClass("content-3-shape-hover");
-    }, function () {
-      $("#content-3-shape").removeClass("content-3-shape-hover");
-    });
-  }
+  // shapeThreeHover = (event) => {
+  //   $("#content-3-diamond").hover(function () {
+  //     $("#content-3-shape").addClass("content-3-shape-hover");
+  //   }, function () {
+  //     $("#content-3-shape").removeClass("content-3-shape-hover");
+  //   });
+  // }
 
   render() {
+    if(this.props.loaded === false) {
+      $("body").css({ 'overflow': 'hidden', 'height': '100%' })
+    } else if (this.props.loaded === true) {
+      $("body").css({ 'overflow': 'auto', 'height': 'auto' })
+    }
+    if(this.state.loaded === false) {
+      $(".navbar").addClass("fadeInDownBig");
+      $(".floatingButton").addClass("fadeInUpBig");
+      $(".down-chevron").addClass("fadeInUpBig");
+      $(".svg-logo").addClass("flipOutX");
+      $(".header-sub-message-anim").addClass("flipInX");
+      $(".header-message").addClass("flipInX");
+    } else {
+      $(".svg-logo").css("display", "none");
+      $(".header-message").css("animation-delay", "0s")
+    }
     return (
       <div >
+        
         <Nav navItemColor={this.state.navcolor} />
+
         <HomeJumbotron smoothScrollChevron={this.smoothScrollChevron} />
 
-        <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeIn home-top-space'
-          intoViewMargin="10%"
-        >
-          <SocialIcons />
-        </InViewMonitor>
+        <div className="svg-wave">
+          <svg viewBox="0 0 100 15" width="100%">
+            <path fill="#e9e9e9d8" opacity="0.6" d="M0 30 V15 Q30 3 60 15 V30z" />
+            <path fill="#e9e9e9ee" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+          </svg>
+        </div>
 
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInLeft'
-          intoViewMargin="5%"
-        > */}
-          <AboutMeHomeSection shapeOneHover={this.shapeOneHover} />
-          <HomeSecondImage />
-        {/* </InViewMonitor> */}
+        <div className="body">
+          <InViewMonitor
+            classNameNotInView='vis-hidden'
+            classNameInView='animated fadeIn slow home-top-space'
+            intoViewMargin="10%"
+          >
+            <SocialIcons />
+          </InViewMonitor>
 
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInLeft'
-          intoViewMargin="5%"
-        >
+          <div className="body-container z-depth-1">
+        
+            <AboutMeHomeSection shapeOneHover={this.shapeOneHover} />
+
+            <HomeSecondImage />
           
-        </InViewMonitor> */}
+            <PortfolioHomeSection shapeTwoHover={this.shapeTwoHover} />
+          
+            <HomeThirdImage />
+          
+            <ContactMeHomeSection shapeThreeHover={this.shapeThreeHover} />
+        
+            <HomeFourthImage />
 
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInRight'
-          intoViewMargin="5%"
-        > */}
-          <PortfolioHomeSection shapeTwoHover={this.shapeTwoHover} />
-        {/* </InViewMonitor> */}
-
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInLeft'
-          intoViewMargin="5%"
-        > */}
-          <HomeThirdImage />
-        {/* </InViewMonitor> */}
-
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInRight'
-          intoViewMargin="5%"
-        > */}
-          <ContactMeHomeSection shapeThreeHover={this.shapeThreeHover} />
-        {/* </InViewMonitor> */}
-
-        {/* <InViewMonitor
-          classNameNotInView='vis-hidden'
-          classNameInView='animated fadeInLeft'
-          intoViewMargin="5%"
-        > */}
-          <HomeFourthImage />
-        {/* </InViewMonitor> */}
-
-        <ActionButton />
+            <ActionButton/>
+          </div>
+        </div>
         <Foot />
       </div>
     )

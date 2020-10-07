@@ -1,6 +1,6 @@
 .socials {
     font-size: 30px;
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
 }
 
 .social-icon {
@@ -12,11 +12,13 @@
     margin-left: 4.5%;
 }
 
+.social-icon-col {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
 @media screen and (max-width: 767px) {
-    .home-top-space {
-        background: rgb(235,119,76);
-        background: linear-gradient(173deg, rgba(235,119,76,1) 0%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 100%);
-    }
 
     .social-icon-1 {
         margin-left: 0%;

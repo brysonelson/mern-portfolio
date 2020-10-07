@@ -1,3 +1,7 @@
+body {
+    overflow: auto !important;
+}
+
 .portfolio-quote {
     /* animation: fadein 4s; */
     text-align: center;

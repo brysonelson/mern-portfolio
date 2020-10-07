@@ -1,12 +1,5 @@
 .content-3-shape-hover {
-    -webkit-transform: rotate(45deg) !important;
-    -moz-transform: rotate(45deg) !important;
-    -ms-transform: rotate(45deg) !important;
-    -o-transform: rotate(45deg) !important;
-    transform: rotate(45deg) !important;
-    bottom: -90% !important;
-    left: -45% !important;
-    transition: .5s !important;
+    
 }
 
 #content-3-shape {
@@ -23,8 +16,9 @@
     overflow: hidden;
     z-index: 0;
     bottom: -90%;
-    left: -35%;
+    left: -36%;
     transition: .5s;
+    
 }
 
 #content-3-diamond {
@@ -42,6 +36,7 @@
     top: 11.5vh;
     left: 5vw;
     transition: .5s;
+    z-index: 1;
     
 }
 
@@ -51,11 +46,12 @@
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    width: 100%;
-    margin-top: 39.5%;
-    margin-left: .5%;
+    width: 95%;
+    margin-top: 32.5%;
+    margin-left: 4.5%;
     color: white;
     transition: .5s;
+    text-align: center;
 
 }
 
@@ -79,8 +75,19 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: .5s;
-    margin-left: 0vw;
-    margin-top: 13vh;
+    margin-left: -.2vw;
+    margin-top: 12vh;
+}
+
+#content-3-diamond:hover + #content-3-shape {
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+    transform: rotate(45deg) !important;
+    bottom: -90% !important;
+    left: -47% !important;
+    transition: .5s !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -97,3 +104,21 @@
     }
     
   }
+
+  @media screen and (max-width: 812px) and (max-height: 376px) {
+    .home-area-mobile {
+        display: none !important;
+    }
+    
+    #content-3-text {
+        margin-top: 0vh;
+        width: 90%;
+        transition: .5s;
+    }
+    
+    #body-content-three {
+        padding-top: 10vh;
+        height: 90vh;
+    }
+    
+    }
