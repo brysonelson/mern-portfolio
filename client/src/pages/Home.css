@@ -1,11 +1,9 @@
-.svg-wave {}
-
-svg {
+.svg-home {
     background: rgba(0, 128, 0, 0);
     background-size: cover;
     width: 100vw;
     display: block;
-    margin-top: -26vh;
+    margin-top: -32vh;
   }
 
 .body {
@@ -92,18 +90,16 @@ svg {
 
 @media screen and (max-width: 812px) and (max-height: 376px) {
 
-    svg {
+    .svg-home {
         margin-top: -36vh;
     }
 
 }
 
-@media screen and (max-width: 737px) and (max-height: 415px) {
+@media screen and (max-width: 376px) and (max-height: 812px) {
 
-    .header-sub-text {
-        margin-top: 90vh !important;
+    .svg-home {
+        margin-top: -25vh;
     }
 
 }
-
-

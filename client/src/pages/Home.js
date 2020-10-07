@@ -97,34 +97,12 @@ export default class Home extends Component {
     $("html, body").animate({ scrollTop: offset.top - 150 }, 700);
   }
 
-  //animations for the shapes on the home page
-  // shapeOneHover = (event) => {
-  //   $("#content-1-diamond").hover(function () {
-  //     $("#content-1-shape").addClass("content-1-shape-hover");
-  //   }, function () {
-  //     $("#content-1-shape").removeClass("content-1-shape-hover");
-  //   });
-  // }
-
-  // shapeTwoHover = (event) => {
-  //   $("#content-2-diamond").on("mouseenter", function () {
-  //     $("#content-2-shape").addClass("content-2-shape-hover");
-  //   }).on("mouseleave", function () {
-  //     $("#content-2-shape").removeClass("content-2-shape-hover");
-  //   });
-  // }
-
-  // shapeThreeHover = (event) => {
-  //   $("#content-3-diamond").hover(function () {
-  //     $("#content-3-shape").addClass("content-3-shape-hover");
-  //   }, function () {
-  //     $("#content-3-shape").removeClass("content-3-shape-hover");
-  //   });
-  // }
-
   render() {
     if(this.props.loaded === false) {
       $("body").css({ 'overflow': 'hidden', 'height': '100%' })
+      setTimeout(function() {
+        $("body").css({ 'overflow': 'auto', 'height': 'auto' })
+      }, 7000);
     } else if (this.props.loaded === true) {
       $("body").css({ 'overflow': 'auto', 'height': 'auto' })
     }
@@ -147,7 +125,7 @@ export default class Home extends Component {
         <HomeJumbotron smoothScrollChevron={this.smoothScrollChevron} />
 
         <div className="svg-wave">
-          <svg viewBox="0 0 100 15" width="100%">
+          <svg className="svg-home" viewBox="0 0 100 15" width="100%">
             <path fill="#e9e9e9d8" opacity="0.6" d="M0 30 V15 Q30 3 60 15 V30z" />
             <path fill="#e9e9e9ee" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
           </svg>

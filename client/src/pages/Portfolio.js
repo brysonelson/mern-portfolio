@@ -30,7 +30,7 @@ export default class Portfolio extends Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     // let myProjects = JSON.stringify(Projects)
-
+    $("body").css({ 'overflow': 'auto', 'height': 'auto' })
     this.setState({
       projectArr: Projects
     })
@@ -71,9 +71,10 @@ export default class Portfolio extends Component {
     // if you've scrolled further than the top of div1 plus it's height
     // change the color. either by adding a class or setting a css property
     if (scrollText > osText - (osText - 20)) {
-      $('#portfolio-header-text').addClass('portfolio-scroll-disappear');
+      $('#portfolio-header-text').addClass('fadeOutDown');
     } else {
-      $('#portfolio-header-text').removeClass('portfolio-scroll-disappear');
+      $('#portfolio-header-text').removeClass('fadeOutDown');
+      $('#portfolio-header-text').addClass('fadeInUp');
     }
   };
 
@@ -96,25 +97,33 @@ export default class Portfolio extends Component {
 
     return (
 
-      <div>
+      <div className="portfolio-container">
         <Nav navItemColor={this.state.navcolor} />
         <PortfolioHeader className="portfolio-head-area" />
-        <Row className="project-area" style={{ marginTop: "38vh" }}>
-          <div className="animated slideInUp">
-            <h4 className="portfolio-quote"><em>"Talk is cheap. Show me the code."</em></h4>
-            <h5 className="portfolio-quote-1"><b>- Linus Torvalds</b></h5>
+        <Row className="project-area">
+          <div className="svg-wave-portfolio">
+            <svg className="svg-element-port" viewBox="0 0 100 15" width="100%">
+              <path fill="#e9e9e9ee" opacity="0.6" d="M0 30 V15 Q30 3 60 15 V30z" />
+              <path fill="#e9e9e9ee" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+            </svg>
           </div>
-          <Col l={10} s={12} m={10} className="offset-l1 offset-m1 project-display-area">
-            <Masonry
-              className={'my-gallery-class'} // default ''
-              elementType={'ul'} // default 'div'
-              options={masonryOptions} // default {}
-              disableImagesLoaded={false} // default false
-              updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-            >
-              {childElements}
-            </Masonry>
-          </Col>
+          <div className="project-body">
+            <div className="animated slideInUp">
+              <h4 className="portfolio-quote"><em>"Talk is cheap. Show me the code."</em></h4>
+              <h5 className="portfolio-quote-1"><b>- Linus Torvalds</b></h5>
+            </div>
+            <Col l={10} s={12} m={10} className="offset-l1 offset-m1 project-display-area">
+              <Masonry
+                className={'my-gallery-class'} // default ''
+                elementType={'ul'} // default 'div'
+                options={masonryOptions} // default {}
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+              >
+                {childElements}
+              </Masonry>
+            </Col>
+          </div>
         </Row>
         <ActionButton />
         <Foot />
